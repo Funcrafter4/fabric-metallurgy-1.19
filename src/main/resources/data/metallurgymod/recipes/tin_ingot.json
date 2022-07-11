@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:raw_tin_ore"
+  },
+  "result": "metallurgymod:tin_ingot",
+  "experience": 0.2
+}
