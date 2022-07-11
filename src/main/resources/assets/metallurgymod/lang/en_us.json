@@ -1,8 +1,71 @@
 {
+  "itemGroup.metallurgymod.metallurgy_group": "Metallurgy",
+
+
+
+
   "item.metallurgymod.raw_tin_ore": "Raw Tin Ore",
   "item.metallurgymod.tin_ingot": "Tin Ingot",
 
-  "itemGroup.metallurgymod.metallurgy_group": "Metallurgy",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   "block.metallurgymod.tin_ore": "Tin Ore"
 }
