@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
     public static final Block TIN_ORE = registerBlock("tin_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_BLOCK);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);
