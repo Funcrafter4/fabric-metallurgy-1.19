@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:raw_silver_ore"
+  },
+  "result": "metallurgymod:silver_ingot",
+  "experience": 0.2
+}
