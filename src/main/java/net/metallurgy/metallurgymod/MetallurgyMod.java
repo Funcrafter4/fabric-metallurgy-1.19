@@ -8,6 +8,7 @@ import net.metallurgy.metallurgymod.block.ModBlocks;
 import net.metallurgy.metallurgymod.recipe.ModRecipes;
 import net.metallurgy.metallurgymod.screen.IronSmelterScreen;
 import net.metallurgy.metallurgymod.screen.ModScreenHandler;
+import net.metallurgy.metallurgymod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
