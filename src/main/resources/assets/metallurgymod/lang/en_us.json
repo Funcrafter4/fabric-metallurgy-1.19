@@ -76,5 +76,7 @@
   "block.metallurgymod.tin_ore": "Tin Ore",
   "block.metallurgymod.manganese_ore": "Manganese Ore",
   "block.metallurgymod.silver_ore": "Silver Ore",
+  "block.metallurgymod.zinc_ore": "Zinc Ore",
+  "block.metallurgymod.platinum_ore": "Platinum Ore",
   "block.metallurgymod.iron_smelter": "Iron Smelter"
 }
