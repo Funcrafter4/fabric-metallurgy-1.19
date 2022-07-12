@@ -11,6 +11,7 @@ import net.metallurgy.metallurgymod.screen.ModScreenHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 public class MetallurgyMod implements ModInitializer {
 
 	public static final String MOD_ID = "metallurgymod";
@@ -21,6 +22,7 @@ public class MetallurgyMod implements ModInitializer {
 
 		ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+		ModWorldGen.generateModWorldGen();
 		ModBlocksEntity.registerAllBlockEntities();
 		ScreenRegistry.register(ModScreenHandler.MYTHRIL_BLOCK_SCREEN_HANDLER, IronSmelterScreen::new);
 		ModRecipes.registerRecipes();
