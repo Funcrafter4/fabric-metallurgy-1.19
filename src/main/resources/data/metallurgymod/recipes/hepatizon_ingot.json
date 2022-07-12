@@ -1,0 +1,14 @@
+{
+  "type": "metallurgymod:iron_smelter",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "metallurgymod:bronze_ingot"
+    }
+  ],
+  "output": {
+    "item": "metallurgymod:hepatizon_ingot"
+  }
+}

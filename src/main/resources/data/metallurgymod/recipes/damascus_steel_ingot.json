@@ -1,0 +1,14 @@
+{
+  "type": "metallurgymod:iron_smelter",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "metallurgymod:bronze_ingot"
+    }
+  ],
+  "output": {
+    "item": "metallurgymod:damascus_steel_ingot"
+  }
+}
