@@ -22,6 +22,9 @@ public class ModBlocks {
     public static final Block SILVER_ORE = registerBlock("silver_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
 
+    public static final Block IRON_SMELTER = registerBlock("iron_smelter",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP); // change to entity block
+
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK,new Identifier(MetallurgyMod.MOD_ID, name),block);
