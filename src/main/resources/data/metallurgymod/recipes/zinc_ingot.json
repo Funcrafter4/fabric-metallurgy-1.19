@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:raw_zinc_ore"
+  },
+  "result": "metallurgymod:zinc_ingot",
+  "experience": 0.2
+}

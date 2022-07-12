@@ -20,6 +20,10 @@ public class ModItems {
 
     public static final Item  SILVER_INGOT = registerItem("silver_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item RAW_ZINC_ORE = registerItem("raw_zinc_ore", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ZINC_INGOT = registerItem("zinc_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);
