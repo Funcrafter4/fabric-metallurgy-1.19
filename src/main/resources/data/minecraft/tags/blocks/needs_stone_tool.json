@@ -1,5 +1,8 @@
 {
   "values": [
-    "metallurgymod:iron_smelter"
+    "metallurgymod:iron_smelter",
+    "metallurgymod:zinc_ore",
+    "metallurgymod:tin_ore",
+    "metallurgymod:manganese_ore"
   ]
 }

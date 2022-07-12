@@ -20,6 +20,12 @@ public class ModBlocks {
     public static final Block MANGANESE_ORE = registerBlock("manganese_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
 
+    public static final Block ZINC_ORE = registerBlock("zinc_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
+
+    public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
+
     public static final Block SILVER_ORE = registerBlock("silver_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
 
