@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:raw_platinum_ore"
+  },
+  "result": "metallurgymod:platinum_ingot",
+  "experience": 0.2
+}
