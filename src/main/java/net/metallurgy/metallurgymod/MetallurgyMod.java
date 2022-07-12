@@ -3,6 +3,7 @@ package net.metallurgy.metallurgymod;
 import net.fabricmc.api.ModInitializer;
 import net.metallurgy.metallurgymod.item.ModItems;
 import net.metallurgy.metallurgymod.block.ModBlocks;
+import net.metallurgy.metallurgymod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +17,6 @@ public class MetallurgyMod implements ModInitializer {
 
 		ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+		ModWorldGen.generateModWorldGen();
 	}
 }
