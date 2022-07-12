@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:manganese_dust"
+  },
+  "result": "metallurgymod:manganese_ingot",
+  "experience": 0.2
+}
