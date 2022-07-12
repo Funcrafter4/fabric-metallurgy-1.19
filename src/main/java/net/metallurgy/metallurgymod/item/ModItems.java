@@ -28,6 +28,20 @@ public class ModItems {
 
     public static final Item  PLATINUM_INGOT = registerItem("platinum_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  ANGMALLEN_INGOT = registerItem("angmallen_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  DAMASCUS_STEEL_INGOT = registerItem("damascus_steel_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  HEPATIZON_INGOT = registerItem("hepatizon_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ELECTRUM_INGOT = registerItem("electrum_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  BRASS_INGOT = registerItem("brass_ingot", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);
     }
