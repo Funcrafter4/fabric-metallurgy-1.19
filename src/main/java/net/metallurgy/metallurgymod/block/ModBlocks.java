@@ -30,7 +30,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
 
     public static final Block IRON_SMELTER = registerBlock("iron_smelter",
-            new IronSmelterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.METALLURGY_GROUP);
+            new IronSmelterBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);
