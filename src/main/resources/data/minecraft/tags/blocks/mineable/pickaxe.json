@@ -2,6 +2,7 @@
   "values": [
     "metallurgymod:tin_ore",
     "metallurgymod:manganese_ore",
-    "metallurgymod:silver_ore"
+    "metallurgymod:silver_ore",
+    "metallurgymod:iron_smelter"
   ]
 }
