@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "key": {
+    "#": {
+      "item": "metallurgymod:silver_ingot"
+    },
+    "%": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " # ",
+    " % "
+  ],
+  "result": {
+    "count": 1,
+    "item": "metallurgymod:silver_sword"
+  }
+}
