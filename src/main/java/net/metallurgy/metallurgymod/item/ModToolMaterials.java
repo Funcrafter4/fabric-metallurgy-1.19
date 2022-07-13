@@ -9,17 +9,15 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    BRASS(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.BRASS_INGOT)),
-    HEPATIZON(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.HEPATIZON_INGOT)),
-    STEEL(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
-    DAMASCUS_STEEL(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.DAMASCUS_STEEL_INGOT)),
-    ANGMALLEN(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.ANGMALLEN_INGOT)),
-    TIN(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.TIN_INGOT)),
-    ZINC(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.ZINC_INGOT)),
-    SILVER(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),
-    PLATINUM(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.PLATINUM_INGOT)),
-    ELECTRUM(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.ELECTRUM_INGOT)),
-    BRONZE(MiningLevels.IRON, 560, 10.0f, 2.5f, 24, () -> Ingredient.ofItems(ModItems.BRONZE_INGOT));
+    BRASS(MiningLevels.WOOD, 16, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.BRASS_INGOT)),
+    HEPATIZON(MiningLevels.IRON, 301, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.HEPATIZON_INGOT)),
+    STEEL(MiningLevels.DIAMOND, 751, 10.0f, 5f, 24, () -> Ingredient.ofItems(ModItems.STEEL_INGOT)),
+    DAMASCUS_STEEL(MiningLevels.DIAMOND, 501, 10.0f, 4f, 24, () -> Ingredient.ofItems(ModItems.DAMASCUS_STEEL_INGOT)),
+    ANGMALLEN(MiningLevels.IRON, 301, 10.0f, 4f, 24, () -> Ingredient.ofItems(ModItems.ANGMALLEN_INGOT)),
+    SILVER(MiningLevels.IRON, 26, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.SILVER_INGOT)),
+    PLATINUM(MiningLevels.IRON, 101, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.PLATINUM_INGOT)),
+    ELECTRUM(MiningLevels.IRON, 101, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.ELECTRUM_INGOT)),
+    BRONZE(MiningLevels.IRON, 251, 10.0f, 3f, 24, () -> Ingredient.ofItems(ModItems.BRONZE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
