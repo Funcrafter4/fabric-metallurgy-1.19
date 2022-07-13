@@ -12,18 +12,17 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
-
-public class IronSmelterScreenHandler extends ScreenHandler {
+public class CrusherBlockScreenHandler extends ScreenHandler {
 
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
 
-    public IronSmelterScreenHandler(int syncId, PlayerInventory playerInventory) {
+    public CrusherBlockScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, new SimpleInventory(4), new ArrayPropertyDelegate( 4));
     }
 
-    public IronSmelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
-        super(ModScreenHandler.IRON_SMELTER_SCREEN_HANDLER, syncId);
+    public CrusherBlockScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
+        super(ModScreenHandler.CRUSHER_BLOCK_SCREEN_HANDLER, syncId);
         checkSize(inventory,4);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);

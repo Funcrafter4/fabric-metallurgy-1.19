@@ -10,5 +10,10 @@ public class ModRecipes {
                 IronSmelterRecipe.Serializer.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, new Identifier(MetallurgyMod.MOD_ID, IronSmelterRecipe.Type.ID),
                 IronSmelterRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(MetallurgyMod.MOD_ID, CrusherBlockRecipe.Serializer.ID),
+                CrusherBlockRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(MetallurgyMod.MOD_ID, CrusherBlockRecipe.Type.ID),
+                CrusherBlockRecipe.Type.INSTANCE);
     }
 }

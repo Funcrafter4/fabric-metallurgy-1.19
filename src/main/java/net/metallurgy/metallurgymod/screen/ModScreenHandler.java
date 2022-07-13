@@ -6,7 +6,10 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 
 public class ModScreenHandler {
-    public static ScreenHandlerType<IronSmelterScreenHandler> MYTHRIL_BLOCK_SCREEN_HANDLER =
+    public static ScreenHandlerType<IronSmelterScreenHandler> IRON_SMELTER_SCREEN_HANDLER =
             ScreenHandlerRegistry.registerSimple(new Identifier(MetallurgyMod.MOD_ID,"iron_smelter"),
                     IronSmelterScreenHandler::new);
+    public static ScreenHandlerType<CrusherBlockScreenHandler> CRUSHER_BLOCK_SCREEN_HANDLER =
+            ScreenHandlerRegistry.registerSimple(new Identifier(MetallurgyMod.MOD_ID,"crusher_block"),
+                    CrusherBlockScreenHandler::new);
 }

@@ -1,0 +1,14 @@
+{
+  "type": "metallurgymod:crusher_block",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:charcoal"
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond_pickaxe"
+  }
+}
