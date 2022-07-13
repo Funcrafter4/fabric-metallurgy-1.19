@@ -2,7 +2,9 @@ package net.metallurgy.metallurgymod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.metallurgy.metallurgymod.MetallurgyMod;
+import net.metallurgy.metallurgymod.item.custom.ModPickaxeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
