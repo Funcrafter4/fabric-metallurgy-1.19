@@ -1,0 +1,11 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:diamond"
+}
+],
+"output": {
+"item": "metallurgymod:diamond_dust"
+}
+}

@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:raw_silver_ore"
+}
+],
+"output": {
+  "item": "metallurgymod:silver_dust",
+  "count": 2
+}
+}

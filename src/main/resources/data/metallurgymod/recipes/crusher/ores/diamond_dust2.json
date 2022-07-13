@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:deepslate_diamond_ore"
+}
+],
+"output": {
+  "item": "metallurgymod:diamond_dust",
+  "count": 2
+}
+}

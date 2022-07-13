@@ -1,0 +1,11 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "metallurgymod:angmallen_ingot"
+}
+],
+"output": {
+"item": "metallurgymod:angmallen_dust"
+}
+}

@@ -1,0 +1,11 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "metallurgymod:platinum_ingot"
+}
+],
+"output": {
+"item": "metallurgymod:platinum_dust"
+}
+}
