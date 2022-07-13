@@ -25,7 +25,7 @@ import java.util.Optional;
 
 public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(4,ItemStack.EMPTY);
+            DefaultedList.ofSize(3,ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -168,10 +168,10 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
         if(match.isPresent()) {
             entity.removeStack(1,1);
-            entity.removeStack(2,1);
 
-            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(3).getCount() + 1));
+
+            entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
+                    entity.getStack(2).getCount() + 1));
 
             entity.resetProgress();
         }
@@ -186,6 +186,6 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
+        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount();
     }
 }

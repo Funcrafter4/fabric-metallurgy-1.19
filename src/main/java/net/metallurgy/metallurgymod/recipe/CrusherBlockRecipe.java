@@ -25,11 +25,9 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     @Override
     public boolean matches(SimpleInventory inventory, World world) {
         if(recipeItems.get(0).test(inventory.getStack(1))){
-            return recipeItems.get(1).test(inventory.getStack(2));
+            return true;
         }
-        if(recipeItems.get(0).test(inventory.getStack(2))){
-            return recipeItems.get(1).test(inventory.getStack(1));
-        }
+
         return false;
     }
 

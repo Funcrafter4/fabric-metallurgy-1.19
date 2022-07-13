@@ -1,5 +1,8 @@
 {
-  "variants": {
-    "": { "model": "metallurgymod:block/crusher_block" }
-  }
+	"variants": {
+		"facing=north": { "model": "metallurgymod:block/crusher_block" },
+		"facing=east": { "model": "metallurgymod:block/crusher_block", "y": 90 },
+		"facing=south": { "model": "metallurgymod:block/crusher_block", "y": 180 },
+		"facing=west": { "model": "metallurgymod:block/crusher_block", "y": 270 }
+	}
 }

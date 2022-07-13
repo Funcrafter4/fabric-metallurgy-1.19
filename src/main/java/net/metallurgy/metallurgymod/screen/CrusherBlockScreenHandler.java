@@ -23,15 +23,15 @@ public class CrusherBlockScreenHandler extends ScreenHandler {
 
     public CrusherBlockScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
         super(ModScreenHandler.CRUSHER_BLOCK_SCREEN_HANDLER, syncId);
-        checkSize(inventory,4);
+        checkSize(inventory,3);
         this.inventory = inventory;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
         this.addSlot(new ModFuelSlot(inventory,0,18,50));
         this.addSlot(new Slot(inventory,1,66,16));
-        this.addSlot(new Slot(inventory,2,66,50));
-        this.addSlot(new ModResultSlot(inventory,3,114,33));
+
+        this.addSlot(new ModResultSlot(inventory,2,114,33));
 
         addPlayerHotbar(playerInventory);
         addPlayerInventory(playerInventory);
