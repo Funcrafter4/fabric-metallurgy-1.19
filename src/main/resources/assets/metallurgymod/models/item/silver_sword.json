@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metallurgymod:item/brass_sword"
+    "layer0": "metallurgymod:item/silver_sword"
   }
 }
