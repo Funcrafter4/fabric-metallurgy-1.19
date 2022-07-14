@@ -28,10 +28,10 @@ public class CrusherBlockScreenHandler extends ScreenHandler {
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 
-        this.addSlot(new ModFuelSlot(inventory,0,18,50));
-        this.addSlot(new Slot(inventory,1,66,16));
+        this.addSlot(new ModFuelSlot(inventory,0,47,51));
+        this.addSlot(new Slot(inventory,1,90,17));
 
-        this.addSlot(new ModResultSlot(inventory,2,114,33));
+        this.addSlot(new ModResultSlot(inventory,2,90,51));
 
         addPlayerHotbar(playerInventory);
         addPlayerInventory(playerInventory);
@@ -50,7 +50,7 @@ public class CrusherBlockScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 26; // This is the width in pixels of your arrow
+        int progressArrowSize = 14; // This is the width in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

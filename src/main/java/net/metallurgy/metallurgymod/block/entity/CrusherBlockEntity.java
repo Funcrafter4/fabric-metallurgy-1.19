@@ -20,6 +20,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import org.spongepowered.include.com.google.gson.Gson;
 
 import java.util.Optional;
 
@@ -157,6 +158,8 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
     }
 
     private static void craftItem(CrusherBlockEntity entity) {
+
+
         World world = entity.world;
         SimpleInventory inventory = new SimpleInventory(entity.inventory.size());
         for (int i = 0; i < entity.inventory.size(); i++) {
@@ -166,12 +169,14 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         Optional<CrusherBlockRecipe> match = world.getRecipeManager()
                 .getFirstMatch(CrusherBlockRecipe.Type.INSTANCE, inventory, world);
 
+
         if(match.isPresent()) {
             entity.removeStack(1,1);
 
 
+
             entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(2).getCount() + 1));
+                    entity.getStack(2).getCount() + match.get().getOutput().getCount()));
 
             entity.resetProgress();
         }

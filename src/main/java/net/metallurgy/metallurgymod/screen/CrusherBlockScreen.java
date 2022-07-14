@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 public class CrusherBlockScreen extends HandledScreen<CrusherBlockScreenHandler> {
     private static final Identifier TEXTURE =
-            new Identifier(MetallurgyMod.MOD_ID,"textures/gui/iron_smelter_gui.png");
+            new Identifier(MetallurgyMod.MOD_ID,"textures/gui/crusher_block_gui.png");
 
     public CrusherBlockScreen(CrusherBlockScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
@@ -32,11 +32,11 @@ public class CrusherBlockScreen extends HandledScreen<CrusherBlockScreenHandler>
         int y = (height - backgroundHeight) / 2;
         drawTexture(matrices, x, y,0,0, backgroundWidth, backgroundHeight);
         if(handler.isCrafting()) {
-            drawTexture(matrices, x + 84, y + 22, 176, 14, handler.getScaledProgress(), 36);
+            drawTexture(matrices, x + 91, y + 36, 176, 14, handler.getScaledProgress(), 14);
         }
 
         if(handler.hasFuel()) {
-            drawTexture(matrices, x + 18, y + 33 + 14 - handler.getScaledFuelProgress(), 176,
+            drawTexture(matrices, x + 48, y + 35 + 14 - handler.getScaledFuelProgress(), 176,
                     14 - handler.getScaledFuelProgress(), 14, handler.getScaledFuelProgress());
         }
     }
