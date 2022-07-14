@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:raw_gold_ore"
+}
+],
+"output": {
+  "item": "metallurgymod:gold_dust",
+  "count": 2
+}
+}

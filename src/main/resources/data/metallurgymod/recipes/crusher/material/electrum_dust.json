@@ -1,0 +1,11 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "metallurgymod:electrum_ingot"
+}
+],
+"output": {
+"item": "metallurgymod:electrum_dust"
+}
+}

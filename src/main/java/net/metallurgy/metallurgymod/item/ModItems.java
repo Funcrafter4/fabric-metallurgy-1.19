@@ -134,6 +134,39 @@ public class ModItems {
 
     public static final Item STEEL_HOE = registerItem("steel_hoe", new ModHoeItem(ModToolMaterials.STEEL, -1, -3f, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  IRON_DUST = registerItem("iron_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  GOLD_DUST = registerItem("gold_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  COPPER_DUST = registerItem("copper_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  TIN_DUST = registerItem("tin_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ZINC_DUST = registerItem("zinc_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  SILVER_DUST = registerItem("silver_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  PLATINUM_DUST = registerItem("platinum_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  BRASS_DUST = registerItem("brass_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  BRONZE_DUST = registerItem("bronze_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  HEPATIZON_DUST = registerItem("hepatizon_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ANGMALLEN_DUST = registerItem("angmallen_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ELECTRUM_DUST = registerItem("electrum_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  STEEL_DUST = registerItem("steel_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  DAMASCUS_STEEL_DUST = registerItem("damascus_steel_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  DIAMOND_DUST = registerItem("diamond_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  COAL_DUST = registerItem("coal_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  EMERALD_DUST = registerItem("emerald_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);

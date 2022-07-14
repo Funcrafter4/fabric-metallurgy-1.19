@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:raw_platinum_ore"
+}
+],
+"output": {
+  "item": "metallurgymod:platinum_dust",
+  "count": 2
+}
+}

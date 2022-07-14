@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:crusher_block",
+"ingredients": [
+{
+"item": "minecraft:raw_tin_ore"
+}
+],
+"output": {
+  "item": "metallurgymod:tin_dust",
+  "count": 2
+}
+}
