@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:damascus_steel_dust"
+  },
+  "result": "metallurgymod:damascus_steel_ingot",
+  "experience": 0.2
+}

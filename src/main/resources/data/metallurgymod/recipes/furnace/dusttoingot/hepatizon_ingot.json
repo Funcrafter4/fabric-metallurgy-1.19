@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:hepatizon_dust"
+  },
+  "result": "metallurgymod:hepatizon_ingot",
+  "experience": 0.2
+}
