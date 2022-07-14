@@ -1,6 +1,7 @@
 package net.metallurgy.metallurgymod.recipe;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
@@ -16,10 +17,13 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
 
+
+
     public CrusherBlockRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
         this.output = output;
         this.recipeItems = recipeItems;
+
     }
 
     @Override
@@ -75,6 +79,11 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
         @Override
         public CrusherBlockRecipe read(Identifier id, JsonObject json) {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
+            JsonObject outputJ = (JsonObject) json.get("output");
+            int count = Integer.parseInt(String.valueOf(outputJ.get("count")));
+
+            output.setCount(count);
+
 
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
@@ -89,6 +98,8 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
         @Override
         public CrusherBlockRecipe read(Identifier id, PacketByteBuf buf) {
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+
+
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromPacket(buf));
