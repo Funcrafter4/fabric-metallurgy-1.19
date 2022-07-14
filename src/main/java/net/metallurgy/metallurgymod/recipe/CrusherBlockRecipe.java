@@ -17,7 +17,7 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
 
-
+    private static int maxProgress = 73;
 
     public CrusherBlockRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
@@ -43,6 +43,10 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     @Override
     public boolean fits(int width, int height) {
         return true;
+    }
+
+    public static int getMaxProgress() {
+        return maxProgress;
     }
 
     @Override
@@ -81,6 +85,7 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
             JsonObject outputJ = (JsonObject) json.get("output");
             int count = Integer.parseInt(String.valueOf(outputJ.get("count")));
+            maxProgress = Integer.parseInt(String.valueOf(outputJ.get("amount")));
 
             output.setCount(count);
 

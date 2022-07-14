@@ -30,7 +30,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private static int maxProgress = 72;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     public CrusherBlockEntity(BlockPos pos, BlockState state) {
@@ -169,11 +169,10 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         Optional<CrusherBlockRecipe> match = world.getRecipeManager()
                 .getFirstMatch(CrusherBlockRecipe.Type.INSTANCE, inventory, world);
 
+        maxProgress = match.get().getMaxProgress();
 
         if(match.isPresent()) {
             entity.removeStack(1,1);
-
-
 
             entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
                     entity.getStack(2).getCount() + match.get().getOutput().getCount()));

@@ -9,6 +9,8 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:hepatizon_ingot"
+    "item": "metallurgymod:hepatizon_ingot",
+    "amount": 100
   }
+
 }

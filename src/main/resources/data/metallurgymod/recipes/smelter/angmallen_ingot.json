@@ -9,6 +9,8 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:angmallen_ingot"
+    "item": "metallurgymod:angmallen_ingot",
+    "amount": 100
   }
+
 }

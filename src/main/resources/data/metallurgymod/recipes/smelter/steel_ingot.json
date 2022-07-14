@@ -9,6 +9,8 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:steel_ingot"
+    "item": "metallurgymod:steel_ingot",
+    "amount": 100
   }
+
 }

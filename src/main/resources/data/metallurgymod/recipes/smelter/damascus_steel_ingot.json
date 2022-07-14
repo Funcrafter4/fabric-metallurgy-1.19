@@ -9,6 +9,8 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:damascus_steel_ingot"
+    "item": "metallurgymod:damascus_steel_ingot",
+    "amount": 100
   }
+
 }

@@ -15,6 +15,7 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
     private final Identifier id;
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
+    private static int maxProgress = 73;
 
     public IronSmelterRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
@@ -63,6 +64,10 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
         return Type.INSTANCE;
     }
 
+    public int getMaxProgress() {
+        return maxProgress;
+    }
+
     public static class Type implements RecipeType<IronSmelterRecipe> {
         private Type() { }
         public static final Type INSTANCE = new Type();
@@ -80,6 +85,8 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
 
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(2, Ingredient.EMPTY);
+            JsonObject outputJ = (JsonObject) json.get("output");
+            maxProgress = Integer.parseInt(String.valueOf(outputJ.get("amount")));
 
             for (int i = 0; i < inputs.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));

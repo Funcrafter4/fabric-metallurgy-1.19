@@ -29,7 +29,7 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private static int maxProgress = 72;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
     public IronSmelterEntity(BlockPos pos, BlockState state) {
@@ -152,6 +152,8 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
         Optional<IronSmelterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
 
+
+
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
     }
@@ -165,6 +167,8 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
 
         Optional<IronSmelterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
+
+        maxProgress = match.get().getMaxProgress();
 
         if(match.isPresent()) {
             entity.removeStack(1,1);
