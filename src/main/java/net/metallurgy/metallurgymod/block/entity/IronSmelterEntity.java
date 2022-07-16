@@ -152,7 +152,9 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
         Optional<IronSmelterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
 
-
+        if(match.isPresent()){
+            maxProgress = match.get().getMaxProgress();
+        }
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
@@ -168,9 +170,10 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
         Optional<IronSmelterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
 
-        maxProgress = match.get().getMaxProgress();
+
 
         if(match.isPresent()) {
+            System.out.println(maxProgress);
             entity.removeStack(1,1);
             entity.removeStack(2,1);
 
