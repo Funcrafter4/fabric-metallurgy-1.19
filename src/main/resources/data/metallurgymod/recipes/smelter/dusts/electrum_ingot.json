@@ -9,6 +9,7 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:electrum_ingot"
+    "item": "metallurgymod:electrum_ingot",
+    "amount": 450
   }
 }

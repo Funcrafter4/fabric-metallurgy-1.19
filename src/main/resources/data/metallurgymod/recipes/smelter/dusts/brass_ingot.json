@@ -9,6 +9,7 @@
     }
   ],
   "output": {
-    "item": "metallurgymod:brass_ingot"
+    "item": "metallurgymod:brass_ingot",
+    "amount": 300
   }
 }
