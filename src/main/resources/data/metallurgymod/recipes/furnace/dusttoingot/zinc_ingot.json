@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:zinc_dust"
+  },
+  "result": "metallurgymod:zinc_ingot",
+  "experience": 0.2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "metallurgymod:brass_dust"
+  },
+  "result": "metallurgymod:brass_ingot",
+  "experience": 0.2
+}
