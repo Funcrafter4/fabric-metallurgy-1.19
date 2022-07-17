@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:tin_dust"
+"item": "metallurgymod:tin_dust",
+  "count": 1
 }
 }

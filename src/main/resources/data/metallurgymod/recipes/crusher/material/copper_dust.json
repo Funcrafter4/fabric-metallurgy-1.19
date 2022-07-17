@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:copper_dust"
+"item": "metallurgymod:copper_dust",
+  "count": 1
 }
 }

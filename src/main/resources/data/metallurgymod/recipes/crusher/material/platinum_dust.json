@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:platinum_dust"
+"item": "metallurgymod:platinum_dust",
+  "count": 1
 }
 }

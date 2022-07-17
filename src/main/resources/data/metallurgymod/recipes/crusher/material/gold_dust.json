@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:gold_dust"
+"item": "metallurgymod:gold_dust",
+  "count": 1
 }
 }

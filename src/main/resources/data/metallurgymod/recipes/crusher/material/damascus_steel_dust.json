@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:damascus_steel_dust"
+"item": "metallurgymod:damascus_steel_dust",
+  "count": 1
 }
 }

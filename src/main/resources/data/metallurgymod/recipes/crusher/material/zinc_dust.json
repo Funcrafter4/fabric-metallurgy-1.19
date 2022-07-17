@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:zinc_dust"
+"item": "metallurgymod:zinc_dust",
+  "count": 1
 }
 }

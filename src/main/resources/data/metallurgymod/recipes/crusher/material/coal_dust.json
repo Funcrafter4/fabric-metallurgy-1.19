@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:coal_dust"
+"item": "metallurgymod:coal_dust",
+  "count": 1
 }
 }

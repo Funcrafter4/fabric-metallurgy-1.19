@@ -15,13 +15,12 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     private final Identifier id;
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
-    private static int maxProgress = 73;
+
 
     public CrusherBlockRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
         this.output = output;
         this.recipeItems = recipeItems;
-
     }
 
     @Override
@@ -41,10 +40,6 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     @Override
     public boolean fits(int width, int height) {
         return true;
-    }
-
-    public static int getMaxProgress() {
-        return maxProgress;
     }
 
     @Override

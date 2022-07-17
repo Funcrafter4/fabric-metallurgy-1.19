@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:hepatizon_dust"
+"item": "metallurgymod:hepatizon_dust",
+  "count": 1
 }
 }

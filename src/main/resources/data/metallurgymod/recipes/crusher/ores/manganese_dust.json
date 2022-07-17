@@ -1,0 +1,12 @@
+{
+  "type": "metallurgymod:crusher_block",
+  "ingredients": [
+    {
+      "item": "metallurgymod:manganese_ore"
+    }
+  ],
+  "output": {
+    "item": "metallurgymod:manganese_dust",
+    "count": 2
+  }
+}

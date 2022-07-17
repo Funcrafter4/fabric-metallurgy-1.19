@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:angmallen_dust"
+"item": "metallurgymod:angmallen_dust",
+  "count": 1
 }
 }

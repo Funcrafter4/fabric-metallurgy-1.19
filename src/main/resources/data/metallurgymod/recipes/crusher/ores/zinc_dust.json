@@ -1,0 +1,12 @@
+{
+  "type": "metallurgymod:crusher_block",
+  "ingredients": [
+    {
+      "item": "metallurgymod:zinc_ore"
+    }
+  ],
+  "output": {
+    "item": "metallurgymod:zinc_dust",
+    "count": 2
+  }
+}

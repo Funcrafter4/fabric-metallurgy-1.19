@@ -6,6 +6,7 @@
 }
 ],
 "output": {
-"item": "metallurgymod:brass_dust"
+"item": "metallurgymod:brass_dust",
+  "count": 1
 }
 }
