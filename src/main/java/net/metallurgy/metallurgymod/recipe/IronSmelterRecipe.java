@@ -15,8 +15,6 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
     private final Identifier id;
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
-    private static int maxProgress ;
-    private static JsonObject jsonThrow;
 
     public IronSmelterRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
         this.id = id;
@@ -50,10 +48,6 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
         return output.copy();
     }
 
-    public static JsonObject getJsonThrow() {
-        return jsonThrow;
-    }
-
     @Override
     public Identifier getId() {
         return id;
@@ -67,10 +61,6 @@ public class IronSmelterRecipe implements Recipe<SimpleInventory> {
     @Override
     public RecipeType<?> getType() {
         return Type.INSTANCE;
-    }
-
-    public int getMaxProgress() {
-        return maxProgress;
     }
 
     public static class Type implements RecipeType<IronSmelterRecipe> {
