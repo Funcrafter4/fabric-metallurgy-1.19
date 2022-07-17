@@ -153,9 +153,7 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
         Optional<CrusherBlockRecipe> match = world.getRecipeManager()
                 .getFirstMatch(CrusherBlockRecipe.Type.INSTANCE, inventory, world);
 
-        if(match.isPresent()){
-            maxProgress = match.get().getMaxProgress();
-        }
+
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
@@ -172,8 +170,6 @@ public class CrusherBlockEntity extends BlockEntity implements NamedScreenHandle
 
         Optional<CrusherBlockRecipe> match = world.getRecipeManager()
                 .getFirstMatch(CrusherBlockRecipe.Type.INSTANCE, inventory, world);
-
-
 
         if(match.isPresent()) {
             entity.removeStack(1,1);

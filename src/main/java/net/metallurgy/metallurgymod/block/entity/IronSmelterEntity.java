@@ -1,5 +1,7 @@
 package net.metallurgy.metallurgymod.block.entity;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.metallurgy.metallurgymod.item.inventory.ImplementedInventory;
 import net.metallurgy.metallurgymod.recipe.IronSmelterRecipe;
@@ -16,11 +18,18 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.io.*;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Optional;
 
 public class IronSmelterEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
@@ -32,6 +41,7 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
     private static int maxProgress = 72;
     private int fuelTime = 0;
     private int maxFuelTime = 0;
+    private static Identifier matchedId;
     public IronSmelterEntity(BlockPos pos, BlockState state) {
         super(ModBlocksEntity.IRON_SMELTER, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
@@ -144,8 +154,9 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
 
     private static boolean hasRecipe(IronSmelterEntity entity) {
         World world = entity.world;
+
         SimpleInventory inventory = new SimpleInventory(entity.inventory.size());
-        for (int i = 0; i < entity.inventory.size(); i++) {
+        for (int i = 1; i < entity.inventory.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
@@ -153,11 +164,41 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()){
-            maxProgress = match.get().getMaxProgress();
+            if(matchedId != match.get().getId()){
+                setMaxProgress(match);
+                matchedId = match.get().getId();
+            }
         }
 
         return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
+    }
+
+    private static void setMaxProgress(Optional<IronSmelterRecipe> match){
+        try {
+            String file = readFileFromResources(makeFileName(String.valueOf(match.get().getId())));
+            JsonParser parser = new JsonParser();
+            JsonObject obj = (JsonObject) parser.parse(file);
+            JsonObject jsonObject = (JsonObject) obj.get("output");
+            maxProgress = Integer.parseInt(String.valueOf(jsonObject.get("amount")));
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private static String makeFileName(String id){
+        StringBuilder builder = new StringBuilder("data/metallurgymod/recipes/");
+        builder.append(id.split(":")[1]);
+        builder.append(".json");
+        return builder.toString();
+    }
+
+    private static String readFileFromResources(String filename) throws URISyntaxException, IOException {
+        URL resource = IronSmelterEntity.class.getClassLoader().getResource(filename);
+        byte[] bytes = Files.readAllBytes(Paths.get(resource.toURI()));
+        return new String(bytes);
     }
 
     private static void craftItem(IronSmelterEntity entity) {
@@ -169,8 +210,6 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
 
         Optional<IronSmelterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
-
-
 
         if(match.isPresent()) {
             System.out.println(maxProgress);

@@ -85,11 +85,7 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
             JsonObject outputJ = (JsonObject) json.get("output");
             int count = Integer.parseInt(String.valueOf(outputJ.get("count")));
-            maxProgress = Integer.parseInt(String.valueOf(outputJ.get("amount")));
-
             output.setCount(count);
-
-
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
 
