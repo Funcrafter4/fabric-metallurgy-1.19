@@ -211,10 +211,8 @@ public class IronSmelterEntity extends BlockEntity implements NamedScreenHandler
                 .getFirstMatch(IronSmelterRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            System.out.println(maxProgress);
             entity.removeStack(1,1);
             entity.removeStack(2,1);
-
             entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
                     entity.getStack(3).getCount() + 1));
 

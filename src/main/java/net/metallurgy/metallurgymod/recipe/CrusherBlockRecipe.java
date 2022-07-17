@@ -15,7 +15,6 @@ public class CrusherBlockRecipe implements Recipe<SimpleInventory> {
     private final Identifier id;
     private final ItemStack output;
     private final DefaultedList<Ingredient> recipeItems;
-
     private static int maxProgress = 73;
 
     public CrusherBlockRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
