@@ -168,6 +168,8 @@ public class ModItems {
 
     public static final Item  EMERALD_DUST = registerItem("emerald_dust", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  ANGMALLEN_PLATE = registerItem("angmallen_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);
     }

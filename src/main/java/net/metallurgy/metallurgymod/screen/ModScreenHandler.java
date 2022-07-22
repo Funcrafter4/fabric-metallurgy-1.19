@@ -17,4 +17,8 @@ public class ModScreenHandler {
     public static ScreenHandlerType<CrusherBlockScreenHandler> CRUSHER_BLOCK_SCREEN_HANDLER =
             ScreenHandlerRegistry.registerSimple(new Identifier(MetallurgyMod.MOD_ID,"crusher_block"),
                     CrusherBlockScreenHandler::new);
+
+    public static ScreenHandlerType<CrusherBlockScreenHandler> COMPRESSOR_BLOCK_SCREEN_HANDLER =
+            ScreenHandlerRegistry.registerSimple(new Identifier(MetallurgyMod.MOD_ID,"compressor_block"),
+                    CrusherBlockScreenHandler::new);
 }

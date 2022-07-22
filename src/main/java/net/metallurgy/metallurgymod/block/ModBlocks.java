@@ -40,6 +40,8 @@ public class ModBlocks {
     public static final Block CRUSHER_BLOCK = registerBlock("crusher_block",
             new CrusherBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
+    public static final Block COMPRESSOR_BLOCK = registerBlock("compressor_block",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);

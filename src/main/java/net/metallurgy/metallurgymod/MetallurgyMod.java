@@ -9,6 +9,7 @@ import net.metallurgy.metallurgymod.recipe.ModRecipes;
 import net.metallurgy.metallurgymod.screen.CrusherBlockScreen;
 import net.metallurgy.metallurgymod.screen.IronSmelterScreen;
 import net.metallurgy.metallurgymod.screen.ModScreenHandler;
+import net.metallurgy.metallurgymod.villager.ModVillagers;
 import net.metallurgy.metallurgymod.screen.StoneSmelterScreen;
 import net.metallurgy.metallurgymod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
@@ -31,5 +32,7 @@ public class MetallurgyMod implements ModInitializer {
 		ScreenRegistry.register(ModScreenHandler.IRON_SMELTER_SCREEN_HANDLER, IronSmelterScreen::new);
 		ScreenRegistry.register(ModScreenHandler.CRUSHER_BLOCK_SCREEN_HANDLER, CrusherBlockScreen::new);
 		ModRecipes.registerRecipes();
+		ModVillagers.registerVillagers();
+		ModVillagers.registerTrades();
 	}
 }

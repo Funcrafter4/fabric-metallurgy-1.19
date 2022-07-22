@@ -14,6 +14,8 @@ public class ModBlocksEntity {
 
     public static BlockEntityType<CrusherBlockEntity> CRUSHER_BLOCK;
 
+    public static BlockEntityType<CompressorBlockEntity> COMPRESSOR_BLOCK;
+
     public static void registerAllBlockEntities(){
         STONE_SMELTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(MetallurgyMod.MOD_ID,"stone_smelter"),
@@ -29,5 +31,10 @@ public class ModBlocksEntity {
                 new Identifier(MetallurgyMod.MOD_ID,"crusher_block"),
                 FabricBlockEntityTypeBuilder.create(CrusherBlockEntity::new,
                         ModBlocks.CRUSHER_BLOCK).build(null));
+
+        COMPRESSOR_BLOCK = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(MetallurgyMod.MOD_ID,"compressor_block"),
+                FabricBlockEntityTypeBuilder.create(CompressorBlockEntity::new,
+                        ModBlocks.COMPRESSOR_BLOCK).build(null));
     }
 }

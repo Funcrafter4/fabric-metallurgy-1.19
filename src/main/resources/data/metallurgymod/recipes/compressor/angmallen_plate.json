@@ -1,0 +1,12 @@
+{
+"type": "metallurgymod:compressor_block",
+"ingredients": [
+{
+"item": "metallurgymod:angmallen_ingot"
+}
+],
+"output": {
+"item": "metallurgymod:angmallen_plate",
+  "count": 1
+}
+}
