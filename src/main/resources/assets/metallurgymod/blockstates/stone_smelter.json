@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "metallurgymod:block/stone_smelter" },
+    "facing=east": { "model": "metallurgymod:block/stone_smelter", "y": 90 },
+    "facing=south": { "model": "metallurgymod:block/stone_smelter", "y": 180 },
+    "facing=west": { "model": "metallurgymod:block/stone_smelter", "y": 270 }
+  }
+}

@@ -9,10 +9,17 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocksEntity {
 
+    public static BlockEntityType<StoneSmelterEntity> STONE_SMELTER;
     public static BlockEntityType<IronSmelterEntity> IRON_SMELTER;
+
     public static BlockEntityType<CrusherBlockEntity> CRUSHER_BLOCK;
 
     public static void registerAllBlockEntities(){
+        STONE_SMELTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(MetallurgyMod.MOD_ID,"stone_smelter"),
+                FabricBlockEntityTypeBuilder.create(StoneSmelterEntity::new,
+                        ModBlocks.STONE_SMELTER).build(null));
+
         IRON_SMELTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(MetallurgyMod.MOD_ID,"iron_smelter"),
                 FabricBlockEntityTypeBuilder.create(IronSmelterEntity::new,

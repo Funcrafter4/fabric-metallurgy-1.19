@@ -9,6 +9,7 @@ import net.metallurgy.metallurgymod.recipe.ModRecipes;
 import net.metallurgy.metallurgymod.screen.CrusherBlockScreen;
 import net.metallurgy.metallurgymod.screen.IronSmelterScreen;
 import net.metallurgy.metallurgymod.screen.ModScreenHandler;
+import net.metallurgy.metallurgymod.screen.StoneSmelterScreen;
 import net.metallurgy.metallurgymod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +27,7 @@ public class MetallurgyMod implements ModInitializer {
         ModItems.registerModItems();
 		ModWorldGen.generateModWorldGen();
 		ModBlocksEntity.registerAllBlockEntities();
+		ScreenRegistry.register(ModScreenHandler.STONE_SMELTER_SCREEN_HANDLER, StoneSmelterScreen::new);
 		ScreenRegistry.register(ModScreenHandler.IRON_SMELTER_SCREEN_HANDLER, IronSmelterScreen::new);
 		ScreenRegistry.register(ModScreenHandler.CRUSHER_BLOCK_SCREEN_HANDLER, CrusherBlockScreen::new);
 		ModRecipes.registerRecipes();

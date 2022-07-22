@@ -133,5 +133,6 @@
   "block.metallurgymod.zinc_ore": "Zinc Ore",
   "block.metallurgymod.platinum_ore": "Platinum Ore",
   "block.metallurgymod.iron_smelter": "Iron Smelter",
-  "block.metallurgymod.crusher_block": "Crusher"
+  "block.metallurgymod.crusher_block": "Crusher",
+  "block.metallurgymod.stone_smelter": "Stone Smelter"
 }

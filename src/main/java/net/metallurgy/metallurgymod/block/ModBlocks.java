@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.metallurgy.metallurgymod.MetallurgyMod;
 import net.metallurgy.metallurgymod.block.custom.CrusherBlock;
 import net.metallurgy.metallurgymod.block.custom.IronSmelterBlock;
+import net.metallurgy.metallurgymod.block.custom.StoneSmelterBlock;
 import net.metallurgy.metallurgymod.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -29,6 +30,9 @@ public class ModBlocks {
 
     public static final Block SILVER_ORE = registerBlock("silver_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.METALLURGY_GROUP);
+
+    public static final Block STONE_SMELTER = registerBlock("stone_smelter",
+            new StoneSmelterBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
     public static final Block IRON_SMELTER = registerBlock("iron_smelter",
             new IronSmelterBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
