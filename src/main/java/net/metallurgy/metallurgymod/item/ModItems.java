@@ -170,6 +170,20 @@ public class ModItems {
 
     public static final Item  ANGMALLEN_PLATE = registerItem("angmallen_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  BRONZE_PLATE = registerItem("bronze_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  BRASS_PLATE = registerItem("brass_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  STEEL_PLATE = registerItem("steel_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  DAMASCUS_STEEL_PLATE = registerItem("damascus_steel_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ELECTRUM_PLATE = registerItem("electrum_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  HEPATIZON_PLATE = registerItem("hepatizon_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  PLATINUM_PLATE = registerItem("platinum_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);
     }
