@@ -3,6 +3,7 @@ package net.metallurgy.metallurgymod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.metallurgy.metallurgymod.MetallurgyMod;
+import net.metallurgy.metallurgymod.block.custom.CompressorBlock;
 import net.metallurgy.metallurgymod.block.custom.CrusherBlock;
 import net.metallurgy.metallurgymod.block.custom.IronSmelterBlock;
 import net.metallurgy.metallurgymod.block.custom.StoneSmelterBlock;
@@ -41,7 +42,7 @@ public class ModBlocks {
             new CrusherBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
     public static final Block COMPRESSOR_BLOCK = registerBlock("compressor_block",
-            new CrusherBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
+            new CompressorBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);

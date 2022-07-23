@@ -20,5 +20,10 @@ public class ModRecipes {
                 CrusherBlockRecipe.Serializer.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, new Identifier(MetallurgyMod.MOD_ID, CrusherBlockRecipe.Type.ID),
                 CrusherBlockRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(MetallurgyMod.MOD_ID, CompressorBlockRecipe.Serializer.ID),
+                CompressorBlockRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(MetallurgyMod.MOD_ID, CompressorBlockRecipe.Type.ID),
+                CompressorBlockRecipe.Type.INSTANCE);
     }
 }

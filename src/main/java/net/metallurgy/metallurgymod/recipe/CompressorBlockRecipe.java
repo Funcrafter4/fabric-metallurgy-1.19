@@ -76,9 +76,6 @@ public class CompressorBlockRecipe implements Recipe<SimpleInventory> {
         @Override
         public CompressorBlockRecipe read(Identifier id, JsonObject json) {
             ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
-            JsonObject outputJ = (JsonObject) json.get("output");
-            int count = Integer.parseInt(String.valueOf(outputJ.get("count")));
-            output.setCount(count);
             JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
             DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
 
