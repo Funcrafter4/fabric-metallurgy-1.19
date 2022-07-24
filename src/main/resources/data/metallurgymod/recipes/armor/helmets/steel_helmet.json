@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "key": {
+    "#": {
+      "item": "metallurgymod:steel_plate"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "item": "metallurgymod:steel_helmet"
+  }
+}
