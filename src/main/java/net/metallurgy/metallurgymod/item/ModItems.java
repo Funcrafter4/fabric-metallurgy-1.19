@@ -187,6 +187,17 @@ public class ModItems {
 
     public static final Item  SILVER_PLATE = registerItem("silver_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  TIN_PLATE = registerItem("tin_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  ZINC_PLATE = registerItem("zinc_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  COPPER_PLATE = registerItem("copper_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  GOLD_PLATE = registerItem("gold_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+
     public static final Item BRASS_HELMET = registerItem("brass_helmet", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
     public static final Item BRASS_CHESTPLATE = registerItem("brass_chestplate", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
