@@ -3,8 +3,9 @@ package net.metallurgy.metallurgymod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.metallurgy.metallurgymod.MetallurgyMod;
 import net.metallurgy.metallurgymod.item.custom.*;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -183,6 +184,81 @@ public class ModItems {
     public static final Item  HEPATIZON_PLATE = registerItem("hepatizon_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
     public static final Item  PLATINUM_PLATE = registerItem("platinum_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item  SILVER_PLATE = registerItem("silver_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRASS_HELMET = registerItem("brass_helmet", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRASS_CHESTPLATE = registerItem("brass_chestplate", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRASS_LEGGINGS = registerItem("brass_leggings", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRASS_BOOTS = registerItem("brass_boots", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRONZE_HELMET = registerItem("bronze_helmet", new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRONZE_CHESTPLATE = registerItem("bronze_chestplate", new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRONZE_LEGGINGS = registerItem("bronze_leggings", new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item BRONZE_BOOTS = registerItem("bronze_boots", new ArmorItem(ModArmorMaterials.BRONZE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet", new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate", new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings", new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots", new ArmorItem(ModArmorMaterials.PLATINUM, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item HEPATIZON_HELMET = registerItem("hepatizon_helmet", new ArmorItem(ModArmorMaterials.HEPATIZON, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item HEPATIZON_CHESTPLATE = registerItem("hepatizon_chestplate", new ArmorItem(ModArmorMaterials.HEPATIZON, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item HEPATIZON_LEGGINGS = registerItem("hepatizon_leggings", new ArmorItem(ModArmorMaterials.HEPATIZON, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item HEPATIZON_BOOTS = registerItem("hepatizon_boots", new ArmorItem(ModArmorMaterials.HEPATIZON, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item STEEL_HELMET = registerItem("steel_helmet", new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate", new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings", new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item STEEL_BOOTS = registerItem("steel_boots", new ArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item DAMASCUS_STEEL_HELMET = registerItem("damascus_steel_helmet", new ArmorItem(ModArmorMaterials.DAMASCUS_STEEL, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item DAMASCUS_STEEL_CHESTPLATE = registerItem("damascus_steel_chestplate", new ArmorItem(ModArmorMaterials.DAMASCUS_STEEL, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item DAMASCUS_STEEL_LEGGINGS = registerItem("damascus_steel_leggings", new ArmorItem(ModArmorMaterials.DAMASCUS_STEEL, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item DAMASCUS_STEEL_BOOTS = registerItem("damascus_steel_boots", new ArmorItem(ModArmorMaterials.DAMASCUS_STEEL, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ANGMALLEN_HELMET = registerItem("angmallen_helmet", new ArmorItem(ModArmorMaterials.ANGMALLEN, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ANGMALLEN_CHESTPLATE = registerItem("angmallen_chestplate", new ArmorItem(ModArmorMaterials.ANGMALLEN, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ANGMALLEN_LEGGINGS = registerItem("angmallen_leggings", new ArmorItem(ModArmorMaterials.ANGMALLEN, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ANGMALLEN_BOOTS = registerItem("angmallen_boots", new ArmorItem(ModArmorMaterials.ANGMALLEN, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ELECTRUM_HELMET = registerItem("electrum_helmet", new ArmorItem(ModArmorMaterials.ELECTRUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ELECTRUM_CHESTPLATE = registerItem("electrum_chestplate", new ArmorItem(ModArmorMaterials.ELECTRUM, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ELECTRUM_LEGGINGS = registerItem("electrum_leggings", new ArmorItem(ModArmorMaterials.ELECTRUM, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item ELECTRUM_BOOTS = registerItem("electrum_boots", new ArmorItem(ModArmorMaterials.ELECTRUM, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item SILVER_HELMET = registerItem("silver_helmet", new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item SILVER_CHESTPLATE = registerItem("silver_chestplate", new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item SILVER_LEGGINGS = registerItem("silver_leggings", new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
+    public static final Item SILVER_BOOTS = registerItem("silver_boots", new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);

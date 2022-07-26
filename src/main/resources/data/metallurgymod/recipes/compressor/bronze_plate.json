@@ -1,0 +1,11 @@
+{
+"type": "metallurgymod:compressor_block",
+"ingredients": [
+{
+"item": "metallurgymod:bronze_ingot"
+}
+],
+"output": {
+"item": "metallurgymod:bronze_plate"
+}
+}
