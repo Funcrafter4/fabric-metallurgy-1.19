@@ -141,69 +141,82 @@
   "block.metallurgymod.platinum_ore": "Platinum Ore",
   "block.metallurgymod.iron_smelter": "Iron Smelter",
   "block.metallurgymod.compressor_block": "Compressor",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  "entity.minecraft.villager.metallurgist": "Metallurgist",
   "block.metallurgymod.crusher_block": "Crusher",
-  "block.metallurgymod.stone_smelter": "Stone Smelter"
+  "block.metallurgymod.stone_smelter": "Stone Smelter",
+  "block.metallurgymod.zinc_block": "Zinc Block",
+  "block.metallurgymod.tin_block": "Tin Block",
+  "block.metallurgymod.silver_block": "Silver Block",
+  "block.metallurgymod.platinum_block": "Platinum Block",
+  "block.metallurgymod.manganese_block": "Manganese Block",
+  "block.metallurgymod.angmallen_block": "Angmallen Block",
+  "block.metallurgymod.brass_block": "Brass Block",
+  "block.metallurgymod.bronze_block": "Bronze Block",
+  "block.metallurgymod.hepatizon_block": "Hepatizon Block",
+  "block.metallurgymod.steel_block": "Steel Block",
+  "block.metallurgymod.damascus_steel_block": "Damascus Steel Block",
+  "block.metallurgymod.electrum_block": "Electrum Block",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "entity.minecraft.villager.metallurgist": "Metallurgist"
 }
