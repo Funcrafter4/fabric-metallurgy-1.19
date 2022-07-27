@@ -7,6 +7,7 @@ import net.metallurgy.metallurgymod.item.ModItems;
 import net.metallurgy.metallurgymod.block.ModBlocks;
 import net.metallurgy.metallurgymod.recipe.ModRecipes;
 import net.metallurgy.metallurgymod.screen.*;
+import net.metallurgy.metallurgymod.util.ModRegistries;
 import net.metallurgy.metallurgymod.villager.ModVillagers;
 import net.metallurgy.metallurgymod.world.gen.ModWorldGen;
 import org.slf4j.Logger;
@@ -32,5 +33,6 @@ public class MetallurgyMod implements ModInitializer {
 		ModRecipes.registerRecipes();
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
+		ModRegistries.registerModStuffs();
 	}
 }

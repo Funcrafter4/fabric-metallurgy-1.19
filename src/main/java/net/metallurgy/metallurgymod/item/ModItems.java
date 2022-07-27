@@ -197,7 +197,6 @@ public class ModItems {
 
     public static final Item  IRON_PLATE = registerItem("iron_plate", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
-
     public static final Item BRASS_HELMET = registerItem("brass_helmet", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
     public static final Item BRASS_CHESTPLATE = registerItem("brass_chestplate", new ArmorItem(ModArmorMaterials.BRASS, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
@@ -270,6 +269,7 @@ public class ModItems {
 
     public static final Item SILVER_BOOTS = registerItem("silver_boots", new ArmorItem(ModArmorMaterials.SILVER, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
+    public static final Item  COMPRESSED_COAL = registerItem("compressed_coal", new Item(new FabricItemSettings().group(ModItemGroup.METALLURGY_GROUP)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(MetallurgyMod.MOD_ID, name), item);
