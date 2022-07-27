@@ -3,6 +3,9 @@
     "metallurgymod:iron_smelter",
     "metallurgymod:zinc_ore",
     "metallurgymod:tin_ore",
-    "metallurgymod:manganese_ore"
+    "metallurgymod:manganese_ore",
+    "metallurgymod:zinc_block",
+    "metallurgymod:tin_block",
+    "metallurgymod:manganese_block"
   ]
 }

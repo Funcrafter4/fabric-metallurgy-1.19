@@ -5,6 +5,17 @@
     "metallurgymod:silver_ore",
     "metallurgymod:zinc_ore",
     "metallurgymod:platinum_ore",
-    "metallurgymod:iron_smelter"
+    "metallurgymod:iron_smelter",
+    "metallurgymod:silver_block",
+    "metallurgymod:angmallen_block",
+    "metallurgymod:brass_block",
+    "metallurgymod:bronze_block",
+    "metallurgymod:hepatizon_block",
+    "metallurgymod:electrum_block",
+    "metallurgymod:steel_block",
+    "metallurgymod:damascus_steel_block",
+    "metallurgymod:zinc_block",
+    "metallurgymod:tin_block",
+    "metallurgymod:manganese_block"
   ]
 }
