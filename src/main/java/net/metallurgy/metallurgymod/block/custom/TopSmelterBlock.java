@@ -2,7 +2,6 @@ package net.metallurgy.metallurgymod.block.custom;
 
 import net.metallurgy.metallurgymod.block.entity.IronSmelterEntity;
 import net.metallurgy.metallurgymod.block.entity.ModBlocksEntity;
-import net.metallurgy.metallurgymod.block.entity.StoneSmelterEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -22,22 +21,21 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class StoneSmelterBlock extends BlockWithEntity implements BlockEntityProvider {
+public class TopSmelterBlock extends BlockWithEntity implements BlockEntityProvider {
 
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public StoneSmelterBlock(Settings settings) {
+    public TopSmelterBlock(Settings settings) {
         super(settings);
     }
 
     public VoxelShape makeShape(){
         VoxelShape shape = VoxelShapes.empty();
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0, 0, 0, 1, 0.75, 1));
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0, 0.75, 0, 1, 0.8125, 1));
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.3125, 0.875, 0.4375, 0.6875, 0.9375, 0.5625));
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.3125, 0.8125, 0.4375, 0.375, 0.875, 0.5625));
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.625, 0.8125, 0.4375, 0.6875, 0.875, 0.5625));
-        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.375, 0.8125, 0.6875, 0.625, 1, 0.9375));
+        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0, 0, 0, 1, 0.8125, 1));
+        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.0625, 0.8125, 0.0625, 0.9375, 0.875, 0.9375));
+        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.3125, 0.9375, 0.4375, 0.6875, 1, 0.5625));
+        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.3125, 0.875, 0.4375, 0.375, 0.9375, 0.5625));
+        shape = VoxelShapes.union(shape, VoxelShapes.cuboid(0.625, 0.875, 0.4375, 0.6875, 0.9375, 0.5625));
 
         return shape;
     }
@@ -72,7 +70,7 @@ public class StoneSmelterBlock extends BlockWithEntity implements BlockEntityPro
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new StoneSmelterEntity(pos, state);
+        return new IronSmelterEntity(pos, state);
     }
 
     @Override
@@ -97,8 +95,8 @@ public class StoneSmelterBlock extends BlockWithEntity implements BlockEntityPro
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if(state.getBlock() != newState.getBlock()){
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof StoneSmelterEntity){
-                ItemScatterer.spawn(world,pos,(StoneSmelterEntity)blockEntity);
+            if (blockEntity instanceof IronSmelterEntity){
+                ItemScatterer.spawn(world,pos,(IronSmelterEntity)blockEntity);
                 world.updateComparators(pos,this);
             }
         }
@@ -109,6 +107,6 @@ public class StoneSmelterBlock extends BlockWithEntity implements BlockEntityPro
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlocksEntity.STONE_SMELTER, StoneSmelterEntity::tick);
+        return checkType(type, ModBlocksEntity.IRON_SMELTER, IronSmelterEntity::tick);
     }
 }

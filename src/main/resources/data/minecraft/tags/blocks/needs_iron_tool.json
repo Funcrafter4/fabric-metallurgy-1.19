@@ -1,5 +1,11 @@
 {
   "values": [
-    "metallurgymod:silver_ore"
+    "metallurgymod:silver_ore",
+    "metallurgymod:silver_block",
+    "metallurgymod:angmallen_block",
+    "metallurgymod:brass_block",
+    "metallurgymod:bronze_block",
+    "metallurgymod:hepatizon_block",
+    "metallurgymod:electrum_block"
   ]
 }

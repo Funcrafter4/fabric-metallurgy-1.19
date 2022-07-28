@@ -3,10 +3,7 @@ package net.metallurgy.metallurgymod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.metallurgy.metallurgymod.MetallurgyMod;
-import net.metallurgy.metallurgymod.block.custom.CompressorBlock;
-import net.metallurgy.metallurgymod.block.custom.CrusherBlock;
-import net.metallurgy.metallurgymod.block.custom.IronSmelterBlock;
-import net.metallurgy.metallurgymod.block.custom.StoneSmelterBlock;
+import net.metallurgy.metallurgymod.block.custom.*;
 import net.metallurgy.metallurgymod.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -38,6 +35,8 @@ public class ModBlocks {
     public static final Block IRON_SMELTER = registerBlock("iron_smelter",
             new IronSmelterBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 
+    public static final Block STEEL_SMELTER = registerBlock("steel_smelter",
+            new TopSmelterBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
     public static final Block CRUSHER_BLOCK = registerBlock("crusher_block",
             new CrusherBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.METALLURGY_GROUP);
 

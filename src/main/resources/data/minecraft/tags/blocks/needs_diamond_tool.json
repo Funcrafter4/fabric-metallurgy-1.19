@@ -1,5 +1,8 @@
 {
   "values": [
-    "metallurgymod:platinum_ore"
+    "metallurgymod:platinum_ore",
+    "metallurgymod:platinum_block",
+    "metallurgymod:steel_block",
+    "metallurgymod:damascus_steel_block"
   ]
 }
