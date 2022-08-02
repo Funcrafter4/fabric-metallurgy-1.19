@@ -3,7 +3,7 @@
   "group": "bark",
   "key": {
     "#": {
-      "item": "metallurgymod:damascuss_steel_plate"
+      "item": "metallurgymod:damascus_steel_plate"
     },
     "%": {
       "item": "metallurgymod:iron_smelter"
@@ -11,7 +11,7 @@
   },
   "pattern": [
     "###",
-    "# #",
+    "#%#",
     "###"
   ],
   "result": {
