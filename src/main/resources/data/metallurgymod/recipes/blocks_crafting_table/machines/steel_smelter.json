@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "key": {
+    "#": {
+      "item": "metallurgymod:damascuss_steel_plate"
+    },
+    "%": {
+      "item": "metallurgymod:iron_smelter"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "item": "metallurgymod:iron_smelter"
+  }
+}

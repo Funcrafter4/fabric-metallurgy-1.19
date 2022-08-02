@@ -6,13 +6,16 @@
       "item": "minecraft:iron_ingot"
     },
     "%": {
-      "item": "minecraft:stone"
+      "item": "minecraft:stonecutter"
+    },
+    "^": {
+      "item": "metallurgymod:steel_plate"
     }
   },
   "pattern": [
     "###",
-    "#%#",
-    "###"
+    "^%^",
+    "^^^"
   ],
   "result": {
     "count": 1,

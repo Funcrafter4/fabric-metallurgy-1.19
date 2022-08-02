@@ -6,19 +6,13 @@
       "item": "minecraft:iron_ingot"
     },
     "%": {
-      "item": "metallurgymod:iron_plate"
-    },
-    "^": {
-      "item": "metallurgymod:bronze_plate"
-    },
-    "&": {
-      "item": "metallurgymod:stone_smelter"
+      "item": "minecraft:cobblestone"
     }
   },
   "pattern": [
     "###",
-    "%&%",
-    "^%^"
+    "% %",
+    "%%%"
   ],
   "result": {
     "count": 1,
